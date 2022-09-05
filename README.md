@@ -1,2 +1,2 @@
 # florarium_shop
-Магазин флорариумов
+Магазин флорариумов https://esafianov.github.io/florarium_shop/
