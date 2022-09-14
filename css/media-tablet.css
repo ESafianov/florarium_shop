@@ -1,0 +1,48 @@
+@media (max-width: 768px) {
+    .header .nav {
+        display: none;
+    }
+
+    .header__burger {
+        display: block;
+    }
+
+    .hero {
+        max-width: 942px;
+        flex-direction: column;
+    }
+
+    .hero__desc,
+    .hero__slider {
+
+        position: relative;
+
+    }
+
+    .hero__desc {
+        /* display: flex; */
+        flex: 0 0 auto;
+        /* align-items: center; */
+    }
+
+
+
+
+    .hero__desc::after {
+
+        right: 18%;
+
+
+    }
+
+    .hero__content {
+        width: 80%;
+        padding-left: 19.9%;
+    }
+
+    .hero__slider {
+        flex: 0 0 auto;
+        transform: translate(0%, 0%);
+        margin-left: 18%;
+    }
+}

@@ -161,6 +161,7 @@ a {
     overflow: hidden;
     background: #FFBF42;
     transition: all 0.3s;
+    flex-shrink: 0;
 }
 
 .cart__img-wrap:hover {
@@ -208,11 +209,68 @@ a {
     object-fit: contain;
 }
 
+.header__burger {
+    display: none;
+    position: relative;
+    width: 55px;
+    height: 33px;
+    z-index: 30;
+    margin-left: 23px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.header__burger::before,
+.header__burger::after {
+    content: "";
+    display: block;
+    background-color: #000000;
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    left: 0;
+    border-radius: 50px;
+}
+
+.header__burger::before {
+    top: 0;
+}
+
+.header__burger::after {
+    bottom: 0;
+}
+
+.header__burger-el {
+    display: block;
+    position: absolute;
+    background-color: #000000;
+    left: 0;
+    height: 5px;
+    width: 55px;
+    top: 14px;
+    border-radius: 50px;
+}
+
+.header__burger.active .header__burger-el {
+    height: 0;
+}
+
+.header__burger.active::before {
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+.header__burger.active::after {
+    top: 50%;
+    transform: rotate(-45deg);
+}
+
 /* HEADER END */
 /* HERO BEGIN */
 .hero {
     height: 573px;
     display: flex;
+    column-gap: 30px;
 }
 
 .hero__desc,
@@ -223,7 +281,13 @@ a {
 }
 
 .hero__desc {
+    /* display: flex; */
     flex: 0 0 100%;
+    /* align-items: center; */
+}
+
+.hero_container {
+    height: 100%;
 }
 
 .hero__desc::after {
@@ -243,17 +307,65 @@ a {
 
 
 
-.hero__content {}
+.hero__content {
+    /* display: flex; */
+    /* flex-direction: column; */
 
-.title {}
+    width: 38%;
 
-.subtitle {}
+
+
+
+}
+
+.title,
+.section__title {
+    padding-top: 150px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    top: 100px;
+
+
+
+}
+
+.subtitle {
+
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 133%;
+
+}
 
 .hero__subtitle {}
 
-.btn {}
+.btn {
 
-.hero__link {}
+
+    background: #FFBF42;
+
+    border-radius: 50px;
+    transition: all 0.3;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #f0a205;
+}
+
+.hero__link {
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.14);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 256px;
+    min-height: 48px;
+    left: 0px;
+    top: 35px;
+    padding: 15px;
+}
 
 .hero__slider {
     flex: 0 0 50%;
