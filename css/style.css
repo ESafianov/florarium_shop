@@ -421,6 +421,9 @@ a {
 
 .product__subtitle {
     margin: 13px 0px 13px;
+    line-height: 23.61px;
+    font-size: 18px;
+    font-weight: 300;
 }
 
 .product__size-list {
@@ -553,13 +556,25 @@ a {
     padding: 18px 33px 24px;
 }
 
-.product__name {}
+.product__name {
+    line-height: 23.61px;
+    font-size: 18px;
+    font-weight: 700;
+}
 
-.product__info {}
+.product__info { 
+    font-size: 12px;
+    font-weight: 300;
+line-height: 15.74px;
+}
 
 .product__buy {
     display: flex;
     justify-content: space-between;
+    line-height: 23.61px;
+    font-size: 18px;
+    font-weight: 700;
+   
 
 }
 
@@ -577,3 +592,147 @@ a {
 .btn {}
 
 /* Product end */
+/* Онас говорят */
+.about {
+}
+
+.about__container {
+    /* display: flex; */
+}
+.about__title {
+    padding-top: 63px;
+}
+.section__title {
+    padding-bottom: 95px;
+}
+.reviews {display: flex;
+    justify-content: space-between;
+}
+.reviews__item {
+    display: block;
+    width: 322px;
+height: 137px;
+
+
+background: #FFFFFF;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
+
+}
+.reviews__header {
+    margin-top: 22px;
+    padding-left: 21px;
+}
+.reviews__name {
+}
+.reviews__prof {
+}
+.reviews__text {
+    display: block;
+     padding: 19px 11px 31px 11px;
+     font-weight: 400;
+     font-size: 11px;
+     line-height: 14.43px;
+}
+
+.rewievs__avatar {
+    position: relative;
+width: 135px;
+height: 192px;
+left: 262px;
+top: -185px;
+}
+/* Footer */
+.footer {
+    background-color: #FFBF42;
+    height: 200px;
+    
+    padding-top: 64px;
+    
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 18px;
+    padding-bottom: 21px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: 'roboto';
+
+}
+
+.logo_img-wrap {
+    border: 2px solid black;
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo__img {
+    width: 70%;
+    height: 80%;
+    object-fit: contain;
+
+}
+
+.logo_desc {
+    line-height: 131.19%;
+
+}
+
+.logo_title {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.logo__subtitle {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.nav {
+    font-weight: 400;
+    margin: 0px 30px;
+}
+
+.nav__list {
+    display: flex;
+
+}
+
+.nav__item {
+    margin-right: 53px;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s;
+}
+
+.nav__item:hover {
+    border-color: black;
+}
+
+.nav__item:last-child {
+    margin-right: 0px;
+}
+
+.nav__item:hover .nav__link {
+    text-shadow: 0px 0px 1px;
+}
+
+.tel {
+    font-weight: 700;
+}
+.footer__slider-ctrl--top {
+    /* right: -50px; */
+    
+    position: relative;
+    transform: rotate(-135deg);
+}
