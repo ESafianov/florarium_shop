@@ -110,3 +110,176 @@
     .btn {}
 
     /* Product end */
+    /* rewives */
+    .about {
+        padding: 51px 0px 117px;
+    }
+
+
+
+    .about__title {
+        margin-bottom: 23px;
+    }
+
+    .section__title {}
+
+    .reviwes__list--wrap {
+        display: flex;
+        justify-content: center;
+        overflow-y: auto;
+        max-height: 640px;
+    }
+
+    .reviews {
+
+        column-gap: 0px;
+        flex-direction: column;
+        padding-right: 101px;
+        overflow-x: auto;
+        row-gap: 72px;
+    }
+
+    .reviews__item {
+        position: relative;
+        width: 322px;
+        min-height: 137px;
+
+        background: #FFFFFF;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
+        padding: 22px 62px 22px 21px;
+        flex-shrink: 0;
+    }
+
+    .reviews__header {}
+
+    .reviews__name {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 131.19%
+    }
+
+    .reviews__prof {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 131.19%;
+        color: #C4C4C4;
+    }
+
+    .reviews__text {
+        display: block;
+        position: absolute;
+        padding: 19px 11px 0px 11px;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 131.19%;
+    }
+
+    .rewievs__avatar {
+        position: absolute;
+        width: 135px;
+        height: 192px;
+        right: -68px;
+        top: -42px;
+
+    }
+
+    .reviews__pic {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    /* Footer */
+    .footer {
+        background-color: #FFBF42;
+        height: 200px;
+        padding-top: 64px;
+    }
+
+    .footer__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 18px;
+        padding-bottom: 21px;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        font-family: 'roboto';
+
+    }
+
+    .logo_img-wrap {
+        border: 2px solid black;
+        height: 60px;
+        width: 60px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin-right: 16px;
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+    }
+
+    .logo__img {
+        width: 70%;
+        height: 80%;
+        object-fit: contain;
+
+    }
+
+    .logo_desc {
+        line-height: 131.19%;
+
+    }
+
+    .logo_title {
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    .logo__subtitle {
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    .nav {
+        font-weight: 400;
+        margin: 0px 30px;
+    }
+
+    .nav__list {
+        display: flex;
+
+    }
+
+    .nav__item {
+        margin-right: 53px;
+        border-bottom: 1px solid transparent;
+        transition: all 0.3s;
+    }
+
+    .nav__item:hover {
+        border-color: black;
+    }
+
+    .nav__item:last-child {
+        margin-right: 0px;
+    }
+
+    .nav__item:hover .nav__link {
+        text-shadow: 0px 0px 1px;
+    }
+
+    .tel {
+        font-weight: 700;
+    }
+
+    .footer__slider-ctrl--top {
+        /* right: -50px; */
+
+        position: relative;
+        transform: rotate(-135deg);
+    }

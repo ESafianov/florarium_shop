@@ -84,13 +84,22 @@ a {
     display: flex;
     align-items: center;
     flex-shrink: 0;
+
+}
+
+@keyframes jump {
+    100% {
+        transform: translateX(0%);
+    }
 }
 
 .logo__img {
     width: 70%;
     height: 80%;
     object-fit: contain;
-
+    transform: translateX(-100%);
+    animation: jump 3s forwards alternate infinite;
+    animation-delay: 2s;
 }
 
 .logo_desc {
@@ -281,9 +290,9 @@ a {
 }
 
 .hero__desc {
-    /* display: flex; */
+
     flex: 0 0 100%;
-    /* align-items: center; */
+
 }
 
 .hero_container {
@@ -308,8 +317,8 @@ a {
 
 
 .hero__content {
-    /* display: flex; */
-    /* flex-direction: column; */
+
+
 
     width: 38%;
 
@@ -562,10 +571,10 @@ a {
     font-weight: 700;
 }
 
-.product__info { 
+.product__info {
     font-size: 12px;
     font-weight: 300;
-line-height: 15.74px;
+    line-height: 15.74px;
 }
 
 .product__buy {
@@ -574,7 +583,7 @@ line-height: 15.74px;
     line-height: 23.61px;
     font-size: 18px;
     font-weight: 700;
-   
+
 
 }
 
@@ -592,62 +601,85 @@ line-height: 15.74px;
 .btn {}
 
 /* Product end */
-/* Онас говорят */
+/* О нас говорят */
 .about {
+    padding: 54px 0px 0px 88px;
 }
 
-.about__container {
-    /* display: flex; */
-}
+
+
 .about__title {
-    padding-top: 63px;
+    margin-bottom: 53px;
 }
+
 .section__title {
     padding-bottom: 95px;
 }
-.reviews {display: flex;
-    justify-content: space-between;
+
+.reviews {
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 45px 5px 66px;
+    overflow-x: auto;
+    column-gap: 70px;
 }
+
 .reviews__item {
-    display: block;
+    position: relative;
     width: 322px;
-height: 137px;
-
-
-background: #FFFFFF;
-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
-
+    min-height: 137px;
+    /* left: 215px; */
+    /* top: 2595px; */
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
+    padding: 22px 62px 22px 21px;
+    flex-shrink: 0;
 }
-.reviews__header {
-    margin-top: 22px;
-    padding-left: 21px;
-}
+
+.reviews__header {}
+
 .reviews__name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 131.19%
 }
+
 .reviews__prof {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 131.19%;
+    color: #C4C4C4;
 }
+
 .reviews__text {
     display: block;
-     padding: 19px 11px 31px 11px;
-     font-weight: 400;
-     font-size: 11px;
-     line-height: 14.43px;
+    position: absolute;
+    padding: 19px 11px 0px 11px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 131.19%;
 }
 
 .rewievs__avatar {
-    position: relative;
-width: 135px;
-height: 192px;
-left: 262px;
-top: -185px;
+    position: absolute;
+    width: 135px;
+    height: 192px;
+    right: -68px;
+    top: -42px;
+
 }
+
+.reviews__pic {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
 /* Footer */
 .footer {
     background-color: #FFBF42;
     height: 200px;
-    
     padding-top: 64px;
-    
 }
 
 .footer__container {
@@ -730,9 +762,10 @@ top: -185px;
 .tel {
     font-weight: 700;
 }
+
 .footer__slider-ctrl--top {
     /* right: -50px; */
-    
+
     position: relative;
     transform: rotate(-135deg);
 }
